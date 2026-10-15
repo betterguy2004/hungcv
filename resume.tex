@@ -1,0 +1,147 @@
+
+
+% -------------- Resume ---------------
+\documentclass{resume}
+
+\begin{document}
+
+% --------- Contact Information -----------
+\introduction[
+    fullname={Phùng Quang Hưng},
+    email={phunghung146@gmail.com},
+    phone={0963624643},
+    linkedin={linkedin.com/in/hunggpq}
+    % github={github.com/sparkysundevil}
+]
+\summary{DevOps Engineer with hands-on experience in Kubernetes and AWS infrastructure. Focused on infrastructure automation, reliable application delivery, and continuous improvement.
+}
+
+
+% --------- Education ---------
+\begin{educationSection}{Education}
+    \educationItem[
+        university={University of Information Technology - VNUHCM },
+        graduation={2022 -- 2026},
+        grade={8.75/10.0 CGPA},
+        program={B.Sc., Computer Networks and Data Communications},
+        coursework={Cloud Computing, DevOps, Network and System Administration, Distributed Systems},
+    ]
+\end{educationSection}
+% --------- Work Experience ----------
+\begin{experienceSection}{Work Experience}
+    \experienceItem[
+        company={FPT Software},
+        position={DevOps Engineer},
+        location={Ho Chi Minh City},
+        duration={Nov 2025 -- Present}
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Contributed to migrating 20 services from Nomad on AWS EC2 to Amazon EKS by adapting YAML deployment configurations to platform standards.
+        \item Configured AI-assisted workflows for YAML conversion and application deployment, and configured GitHub Actions CI/CD using shared modules.
+        \item Investigated production incidents using Amazon CloudWatch and Datadog, resolving some independently and collaborating with the team on the remainder.
+    \end{itemize}
+    \experienceItem[
+        company={Axon Active},
+        position={Junior ICT Engineer},
+        location={Ho Chi Minh City},
+        duration={Aug 2025 -- Oct 2025}
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Provided IT support (L1/L2), account management, and endpoint troubleshooting.
+    \end{itemize}
+
+\end{experienceSection}
+
+% --------- Skills -----------
+\begin{skillsSection}{Technical Skills}
+    \skillItem[
+        category={Cloud \& IaC},
+        skills={AWS, Terraform}
+    ] \\
+    \skillItem[
+        category={CI/CD \& Containers},
+        skills={Git, GitHub, GitHub Actions, Jenkins, ArgoCD, Docker, Kubernetes}
+    ] \\
+    \skillItem[
+        category={Cloud Platforms \& Monitoring},
+        skills={AWS EC2, Amazon EKS, Nomad, CloudWatch, Datadog}
+    ] \\
+    \skillItem[
+        category={Networking \& OS},
+        skills={TCP/IP, VLAN, Routing, Linux}
+    ] 
+\end{skillsSection}
+
+
+
+
+
+% --------- Projects -----------
+\begin{experienceSection}{Academic Projects}
+	      \projectItem[
+	title={ROOT CAUSE ANALYSIS IN MICROSERVICES},
+	duration={June 2026},
+	team={2},
+	keyHighlight={Built MyRCA, an unsupervised two-step RCA framework for microservices via distributed tracing. \href{https://drive.google.com/drive/u/3/folders/1t9heWwOSkCfPsiXrWNROt5kCzmniqRRA}{\textcolor{blue}{\textit{Project Report}}}}
+	]
+	\begin{itemize}
+		\vspace{-0.5em}
+		\itemsep -6pt {}
+		\item Built and deployed a microservices root-cause analysis framework using distributed tracing data and Kubernetes, enabling automated diagnosis of service failures.
+        \item Implemented the anomaly detection pipeline in Python and ranked root-cause candidates using Causal \& Jaccard scoring, achieving F1 0.877 and A@1 0.909.
+	\end{itemize}
+	
+    \projectItem[
+        title={End-to-end DevOps Pipeline - Ranked 1st in class},
+        duration={June 2025},
+        team={2},
+       keyHighlight={Deployed chat microservices app on AWS with Terraform, Jenkins \& ArgoCD. \href{https://github.com/MeetingTeam}{\textcolor{blue}{\textit{GitHub}}}}
+]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Provisioned AWS infrastructure with Terraform and deployed a microservices application using a full end-to-end DevOps workflow.
+        \item Configured CI/CD pipelines with Jenkins and ArgoCD and managed Kubernetes manifests to support automated delivery and environment consistency.
+        
+    \end{itemize}
+
+
+    % \projectItem[
+    %     title={Enterprise Network Infrastructure Design for O-UIT Company},
+    %     duration={Fall 2024},
+    %     team={4},
+    %     keyHighlight=Design three-tier architect enterprise network.
+    %     % Optional: Add report link if available and professional
+    %     \href{https://docs.google.com/document/d/1ij7DAoHRcJV_3vilYMOIAESrTe84WP7t/edit?usp=sharing&ouid=110580317238341657252&rtpof=true&sd=true}{\textcolor{blue}{\textit{Project Report}}}
+    % ]
+
+\end{experienceSection}
+
+
+% --------- Awards -----------
+\begin{experienceSection}{Awards and Certificates}
+    \projectItemm[
+        title={NET Challenge 2024 – Champion \& Team Leader},
+        duration={Dec 2024},
+        keyHighlight={Led the team to 1st Prize among 109 teams nationwide (Networking \& Cloud).}
+    ] \\
+    \projectItemm[
+        title={Academic Scholarship – UIT-VNUHCM},
+        duration={2023–2025},
+        keyHighlight={Awarded for consecutive excellent academic performance.}
+    ] \\
+    \awardItem[
+        title={AWS Certified Solutions Architect – Associate},
+        duration={Jan 2026}
+    ] \\
+    \awardItem[
+        title={CCNA},
+        duration={Aug 2024}
+    ] 
+\end{experienceSection}
+
+\end{document}
